@@ -21,14 +21,14 @@ class Scraper
 
     # Hardcode the header row, assuming we know beforehand what the columns
     # will be. TODO(cs): don't harcode this!
-    @rows << ["Rank", "URL", "Name", "Industry", "Incorporation Year",
-              "Revenue Rs Crore", "Revenue %",
-              "Net Operating Income Rs Crore", "Net Operating Income %",
-              "Profit Rs Crore", "Profit %",
-              "Assets Rs Crore", "Assets %",
-              "Net Worth Rs Crore", "Net Worth %",
-              "Equity Dividend Rs Crore", "Equity Dividend %",
-              "Employee Cost Rs Crore", "Employee Cost %"]
+    @rows << ["Rank", "URL", "Name", "Industry", "IncorporationYear",
+              "RevenueRsCrore", "RevenueChange",
+              "NetOperatingIncomeRsCrore", "NetOperatingIncomeChange",
+              "ProfitRsCrore", "ProfitChange",
+              "AssetsRsCrore", "AssetsChange",
+              "NetWorthRsCrore", "NetWorthChange",
+              "EquityDividendRsCrore", "EquityDividendChange",
+              "EmployeeCostRsCrore", "EmployeeCostChange"]
   end
 
   def scrape_company(html, url)
