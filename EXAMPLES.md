@@ -18,6 +18,9 @@ Example queries:
 ```
 
 ### Read a complex query from a file:
+
+What are the largest industries in aggregate?
+
 ```
 ./q -H -d ',' -q multilinequery.sql
 ```
